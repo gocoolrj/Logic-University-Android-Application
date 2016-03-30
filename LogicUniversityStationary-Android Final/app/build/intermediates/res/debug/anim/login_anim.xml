@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator" >
+
+    <translate
+        android:duration="1400"
+        android:fromYDelta="50%p"
+        android:toYDelta="%p"
+        />
+</set><!-- From: file:/Users/student/Desktop/LogicUniversityStationary%202/app/src/main/res/anim/login_anim.xml -->

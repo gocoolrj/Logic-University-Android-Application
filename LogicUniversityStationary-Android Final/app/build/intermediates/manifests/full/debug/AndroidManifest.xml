@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iss.nus.com.logicuniversitystationary"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_login"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.Login"
+            android:label="Logic Store" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.Homepage"
+            android:label="@string/title_activity_homepage" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.AdjustmentVoucher"
+            android:label="@string/title_activity_adjustment_voucher" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.LowStock"
+            android:label="@string/title_activity_low_stock" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.OrderList"
+            android:label="@string/title_activity_order_list" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.Ordereditems"
+            android:label="@string/title_activity_ordereditems" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.Collectionpoint"
+            android:label="@string/title_activity_collectionpoint" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.DepartmentRep"
+            android:label="@string/title_activity_department_rep" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.DeptHomePage"
+            android:label="@string/title_activity_dept_home_page" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.DeptDelegate"
+            android:label="@string/title_activity_dept_delegate" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.DeptApprove_Reject"
+            android:label="@string/title_activity_dept_approve__reject" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.DeptApprove_RejectforDetails"
+            android:label="@string/title_activity_dept_approve__rejectfor_details" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.NoInternet"
+            android:label="@string/title_activity_no_internet" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.ProductList"
+            android:label="@string/title_activity_product_list" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.AllOrders"
+            android:label="@string/title_activity_all_orders" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.CollectionRepresentatives"
+            android:label="@string/title_activity_collection_representatives" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.CollectionRepresentativeDetails"
+            android:label="@string/title_activity_collection_representative_details" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.TabBarActivity"
+            android:label="@string/title_activity_tab_bar" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.OrderListUnfulfilled"
+            android:label="@string/title_activity_order_list_unfulfilled" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.OrdersParent"
+            android:label="@string/title_activity_orders_parent" >
+        </activity>
+        <activity
+            android:name="iss.nus.com.logicuniversitystationary.OrderTabs"
+            android:label="@string/title_activity_order_tabs" >
+        </activity>
+    </application>
+
+</manifest>

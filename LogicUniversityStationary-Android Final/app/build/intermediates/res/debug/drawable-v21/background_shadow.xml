@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item >-->
+        <!--<shape-->
+            <!--android:shape="rectangle">-->
+            <!--<solid android:color="@android:color/darker_gray" />-->
+            <!--<corners android:radius="10dp"/>-->
+
+        <!--</shape>-->
+    <!--</item>-->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android" android:color="#3498db">
+    <item>
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</ripple>
+
+
+<!--</layer-list>--><!-- From: file:/Users/student/Desktop/LogicUniversityStationary%202/app/src/main/res/drawable-v21/background_shadow.xml -->

@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:background="@drawable/background_main"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:weightSum="7"
+    tools:context=".AdjustmentVoucher">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbarHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill_vertical"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:weightSum="7"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.5"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etItemCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:hint="Product Code"
+                android:lines="1"
+                android:maxLength="10"
+                android:paddingLeft="6dp"
+                android:textColor="#f7f7f7"
+                android:textColorHint="#BBDEFB" />
+
+            <LinearLayout
+                android:id="@+id/productsSearch"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1.7"
+                    android:hint="Search by name"
+                    android:paddingLeft="5dp"
+                    android:textColor="#f7f7f7"
+                    android:textColorHint="#BBDEFB"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/background_plus"
+                    android:elevation="6dp"
+                    android:padding="15dp"
+                    android:src="@drawable/search50"
+                    android:stateListAnimator="@anim/anim" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etQty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Quantity"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="5"
+                android:textColor="#f7f7f7"
+                android:textColorHint="#BBDEFB" />
+
+            <EditText
+                android:id="@+id/etRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:ems="10"
+                android:hint="Reason"
+                android:inputType="textMultiLine"
+                android:textColor="#f7f7f7"
+                android:textColorHint="#BBDEFB" />
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:layout_margin="2dp"
+                android:background="@drawable/background_plus"
+                android:elevation="6dp"
+                android:padding="15dp"
+                android:src="@drawable/plus"
+                android:stateListAnimator="@anim/anim" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="2.8"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llHeaderProgress2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ProgressBar
+                        style="@android:style/Widget.Material.ProgressBar.Large"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lvAdjustmentStock"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btSubmitAdjustmentVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/background_button"
+            android:elevation="4dp"
+            android:stateListAnimator="@anim/anim"
+            android:text="Submit"
+            android:textColor="#f7f7f7"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/student/Desktop/LogicUniversityStationary%202/app/src/main/res/layout-v21/activity_adjustment_voucher.xml -->

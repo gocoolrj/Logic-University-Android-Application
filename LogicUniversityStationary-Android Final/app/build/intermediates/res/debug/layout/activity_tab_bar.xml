@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/background_main"
+    tools:context="iss.nus.com.logicuniversitystationary.TabBarActivity">
+
+
+</RelativeLayout>
+<!-- From: file:/Users/student/Desktop/LogicUniversityStationary%202/app/src/main/res/layout/activity_tab_bar.xml -->

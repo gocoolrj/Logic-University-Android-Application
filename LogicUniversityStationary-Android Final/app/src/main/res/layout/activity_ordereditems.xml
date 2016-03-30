@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main"
+    android:nestedScrollingEnabled="true"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Ordereditems">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/toolbarHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill_vertical"
+            android:fillViewport="true"
+            android:nestedScrollingEnabled="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/llHeaderProgress"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone" >
+                <ProgressBar
+                    android:id="@+id/pbHeaderProgress"
+                    style="@android:style/Widget.Material.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </ProgressBar>
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="true"
+                android:id="@+id/lvOrderedItems" />
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|bottom"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <Button
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#F2f2f2"
+            android:background="#32b6a8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:elevation="4dp"
+            android:layout_marginBottom="4dp"
+            android:text="SEND TO DISBURSEMENT"
+            android:id="@+id/sendDisbursement"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</LinearLayout>

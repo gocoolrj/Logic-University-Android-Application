@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+    <!--<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">-->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+
+    <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+        <!-- Customize your theme here. -->
+
+        <item name="colorControlNormal">#3498db</item>
+        <item name="colorControlActivated">#32b6a8</item>
+        <item name="colorControlHighlight">#32b6a8</item>
+        <item name="colorPrimary">#2F89C5</item>
+        <item name="android:textColor">#f7f7f7</item>
+    </style>
+
+    <style name="ForCheckbox">
+        <item name="colorControlNormal">#f7f7f7</item>
+        <item name="colorControlActivated">#f7f7f7</item>
+        <item name="colorControlHighlight">#32b6a8</item>
+        </style>
+
+    <style name="CustomCheckBox">
+        <item name="android:theme">@style/ForCheckbox</item>
+    </style>
+
+    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/background_main</item>
+    </style>
+
+</resources>

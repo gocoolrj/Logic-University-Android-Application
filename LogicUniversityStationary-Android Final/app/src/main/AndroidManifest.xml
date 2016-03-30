@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="iss.nus.com.logicuniversitystationary" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_login"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Login"
+            android:label="Logic Store"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Homepage"
+            android:label="@string/title_activity_homepage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AdjustmentVoucher"
+            android:label="@string/title_activity_adjustment_voucher"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LowStock"
+            android:label="@string/title_activity_low_stock"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OrderList"
+            android:label="@string/title_activity_order_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Ordereditems"
+            android:label="@string/title_activity_ordereditems"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".Collectionpoint"
+            android:label="@string/title_activity_collectionpoint"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DepartmentRep"
+            android:label="@string/title_activity_department_rep"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeptHomePage"
+            android:label="@string/title_activity_dept_home_page"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeptDelegate"
+            android:label="@string/title_activity_dept_delegate"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeptApprove_Reject"
+            android:label="@string/title_activity_dept_approve__reject"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DeptApprove_RejectforDetails"
+            android:label="@string/title_activity_dept_approve__rejectfor_details"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".ProductList"
+            android:label="@string/title_activity_product_list"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AllOrders"
+            android:label="@string/title_activity_all_orders"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CollectionRepresentatives"
+            android:label="@string/title_activity_collection_representatives"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CollectionRepresentativeDetails"
+            android:label="@string/title_activity_collection_representative_details"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".OrderListUnfulfilled"
+            android:label="@string/title_activity_order_list_unfulfilled"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <shape android:shape="oval" >
+            <solid android:color="#32b6a8" />
+
+            <stroke
+                android:width="15dp"
+                android:color="#00000000" />
+        </shape>
+    </item>
+    <item android:drawable="@drawable/oval_bg"/>
+</layer-list>

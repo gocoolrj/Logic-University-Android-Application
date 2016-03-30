@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Login"
+    android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:id="@+id/lvHeaderProgress"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        <ProgressBar
+            android:id="@+id/pbHeaderProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ProgressBar>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llLogo"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/office20"/>
+
+        <TextView
+            android:textColor="#fff"
+            android:id="@+id/tvTitle"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Logic University Stationery"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="15dp"
+        android:id="@+id/loginLayout">
+
+        <EditText
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Employee ID"
+            android:paddingLeft="10dp"
+            android:textColorHint="#5DADE2"
+            android:textColor="#f2f2f2"
+            android:id="@+id/etUserName" />
+
+        <EditText
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:id="@+id/etPassword"
+            android:backgroundTint="#fff"
+            android:paddingLeft="10dp"
+            android:textColorHint="#5DADE2"
+            android:textColor="#f2f2f2"
+            android:layout_gravity="bottom"
+            android:inputType="textPassword"/>
+
+    <Button
+        android:textSize="18dp"
+        android:textColor="#F2f2f2"
+        android:background="#32b6a8"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Login"
+        android:id="@+id/btLogin"
+        android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

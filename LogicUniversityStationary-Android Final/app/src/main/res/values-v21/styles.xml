@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="AppTheme" parent="android:Theme.Material">-->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:colorPrimary">#2F89C5</item>
+        <item name="android:colorPrimaryDark">#13374F</item>
+        <item name="colorControlNormal">#3498db</item>
+        <item name="colorControlActivated">#32b6a8</item>
+        <item name="colorControlHighlight">#32b6a8</item>
+        <item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+    </style>
+
+    <style name="MyDatePickerStyle" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:divider">#fff</item>
+    </style>
+
+    <style name="NavigationTab" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/background_main</item>
+        <item name="android:textColor">#fff</item>
+        <item name="tabSelectedTextColor">#fff</item>
+        <item name="tabIndicatorColor">#00f</item>
+        <item name="tabTextAppearance">@style/NavigationTabTextAppeareance</item>
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>

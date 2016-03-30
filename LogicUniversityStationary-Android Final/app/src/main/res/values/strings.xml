@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Logic University Stationary</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_home">Home</string>
+    <string name="action_approve">Approve</string>
+    <string name="action_reject">Reject</string>
+    <string name="title_activity_homepage">Welcome</string>
+    <string name="title_activity_adjustment_voucher">Adjustment Voucher</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_login">Good To See You</string>
+    <string name="title_activity_low_stock">Low Stock</string>
+    <string name="title_activity_order_list">Order List</string>
+    <string name="title_activity_ordereditems">Ordered Items</string>
+    <string name="title_activity_collectionpoint">Collection Points</string>
+    <string name="title_activity_department_rep">Department Rep</string>
+    <string name="title_activity_dept_home_page">Welcome</string>
+    <string name="title_activity_dept_delegate">Delegate Employee</string>
+    <string name="title_activity_dept_approve__reject">Approve Reject</string>
+    <string name="title_activity_dept_approve__rejectfor_details">Order Details</string>
+    <string name="title_activity_stock_update">Stock_update</string>
+    <string name="title_activity_no_internet">NoInternet</string>
+    <string name="title_activity_product_list">Products List</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_all_orders">AllOrders</string>
+    <string name="title_activity_collection_representatives">CollectionRepresentatives</string>
+    <string name="title_activity_collection_representative_details">
+        CollectionRepresentativeDetails
+    </string>
+    <string name="title_activity_tab_bar">TabBarActivity</string>
+    <string name="title_activity_order_list_unfulfilled">OrderListUnfulfilled</string>
+    <string name="title_activity_orders_parent">OrdersParent</string>
+    <string name="title_activity_order_tabs">OrderTabs</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+</resources>
